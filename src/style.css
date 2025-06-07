@@ -1,0 +1,12 @@
+input {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+select {
+  border-radius: 8px;
+  display: block;
+  margin: 15px 0;
+  min-width: 200px;
+  padding: 10px;
+}
