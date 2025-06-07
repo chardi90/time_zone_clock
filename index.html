@@ -9,15 +9,14 @@
     <title>Time Zone Clock</title>
   </head>
   <body>
-    <h1 id="hello">Hello</h1>
-    <h2 id="date"></h2>
-    <h3 id="tomorrow"></h3>
-    <form action="/submit">
-      <div>
-        <label for="city">Which city?</label>
-        <input type="search" name="city" id="city" />
-      </div>
-    </form>
+    <div>
+      <select name="city-dropdown" id="city-dropdown">
+        <option value="">Select a city</option>
+        <option value="paris">Paris 🇫🇷</option>
+        <option value="tokyo">Tokyo 🇯🇵</option>
+        <option value="sydney">Sydney 🇦🇺</option>
+      </select>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
