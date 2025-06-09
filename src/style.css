@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
 }
 
@@ -25,6 +25,9 @@ h2 {
   font-size: 20px;
   font-style: normal;
   margin: 0 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 input {
@@ -76,6 +79,11 @@ footer {
   justify-content: space-between;
   margin: 0;
   padding: 20px 0;
+}
+
+.city > div:first-child {
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .city:last-child {
