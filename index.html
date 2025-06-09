@@ -9,27 +9,52 @@
     <title>World Clock</title>
   </head>
   <body>
-    <header>
-      <h1>World Clock</h1>
-    </header>
-    <div class="city-selector">
-      <select name="city-dropdown" id="city-dropdown">
-        <option value="">Choose a city</option>
-        <option value="paris">Paris 🇫🇷</option>
-        <option value="tokyo">Tokyo 🇯🇵</option>
-        <option value="sydney">Sydney 🇦🇺</option>
-      </select>
+    <div class="container">
+      <header>
+        <h1>World Clock</h1>
+      </header>
+      <div class="city-selector">
+        <select name="city-dropdown" id="city-dropdown">
+          <option value="">Choose a city</option>
+          <option value="paris">Paris 🇫🇷</option>
+          <option value="tokyo">Tokyo 🇯🇵</option>
+          <option value="sydney">Sydney 🇦🇺</option>
+        </select>
+      </div>
+      <div class="cities-displayed">
+        <div class="city">
+          <h2>Los Angeles</h2>
+          <div class="date">9th June, 2025</div>
+          <div class="time">1:48:15 AM</div>
+        </div>
+        <div class="city">
+          <h2>Sydney</h2>
+          <div class="date">9th June, 2025</div>
+          <div class="time">1:48:15 AM</div>
+        </div>
+        <div class="city">
+          <h2>Tokyo</h2>
+          <div class="date">9th June, 2025</div>
+          <div class="time">1:48:15 AM</div>
+        </div>
+        <div class="city">
+          <h2>Paris</h2>
+          <div class="date">9th June, 2025</div>
+          <div class="time">1:48:15 AM</div>
+        </div>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/chardi90/" target="_blank">Clare Harding</a
+        >,
+        <a href="https://github.com/chardi90/time_zone_clock" target="_blank"
+          >open-sourced on Github</a
+        >, and
+        <a href="https://time-zones-clock.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
     </div>
-    <footer>
-      Coded by
-      <a href="https://github.com/chardi90/" target="_blank">Clare Harding</a>,
-      <a href="https://github.com/chardi90/time_zone_clock" target="_blank"
-        >open-sourced on Github</a
-      >, and
-      <a href="https://time-zones-clock.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>

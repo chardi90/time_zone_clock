@@ -20,10 +20,24 @@ select {
 }
 
 footer {
+  padding: 10px;
   text-align: center;
+}
+
+.container {
+  background-color: #ffe79a;
+  border-radius: 10px;
+  display: block;
+  padding: 10px 10px;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .city-selector {
   display: flex;
   justify-content: center;
+}
+
+.city {
+  text-align: center;
 }
