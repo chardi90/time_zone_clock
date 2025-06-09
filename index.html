@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>Time Zone Clock</title>
+    <title>World Clock</title>
   </head>
   <body>
+    <header>
+      <h1>World Clock</h1>
+    </header>
     <div>
       <select name="city-dropdown" id="city-dropdown">
-        <option value="">Select a city</option>
+        <option value="">Choose a city</option>
         <option value="paris">Paris 🇫🇷</option>
         <option value="tokyo">Tokyo 🇯🇵</option>
         <option value="sydney">Sydney 🇦🇺</option>
       </select>
     </div>
+    <footer>
+      Coded by
+      <a href="https://github.com/chardi90/" target="_blank">Clare Harding</a>,
+      <a href="https://github.com/chardi90/time_zone_clock" target="_blank"
+        >open-sourced on Github</a
+      >, and <a href="#" target="_blank">hosted on Netlify</a>.
+    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
