@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: #fda403;
+  color: #e8751a;
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
   font-style: normal;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: #e8751a;
+  color: #fda403;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -55,8 +55,7 @@ a {
 footer {
   color: #c51350;
   font-size: smaller;
-  margin-top: 20px;
-  padding: 10px 0;
+  margin: 0 0 30px;
   text-align: center;
 }
 
