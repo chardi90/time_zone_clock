@@ -1,9 +1,29 @@
 body {
+  color: #ef5a5a;
   background-color: #feffdf;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 h1 {
+  color: #fda403;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 42;
   text-align: center;
+}
+
+h2 {
+  color: #e8751a;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: normal;
+  margin: 0 0 5px;
 }
 
 input {
@@ -12,32 +32,71 @@ input {
 }
 
 select {
+  color: #c51350;
   border-radius: 8px;
   display: block;
-  margin: 15px 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  margin: 0 auto;
+  margin-bottom: 20px;
   min-width: 200px;
   padding: 10px;
+  width: 100%;
+}
+
+a {
+  color: #ef5a5a;
+  text-decoration: none;
 }
 
 footer {
-  padding: 10px;
+  color: #c51350;
+  font-size: smaller;
+  margin-top: 20px;
+  padding: 10px 0;
   text-align: center;
 }
 
 .container {
-  background-color: #ffe79a;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: block;
-  padding: 10px 10px;
-  margin: 0 auto;
-  max-width: 600px;
-}
-
-.city-selector {
-  display: flex;
-  justify-content: center;
+  padding: 30px 50px;
+  margin: 60px auto;
+  max-width: 500px;
 }
 
 .city {
-  text-align: center;
+  border-bottom: 1px dashed #e8751a;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.city:last-child {
+  border: none;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.time small {
+  font-size: 18px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+a:hover {
+  color: #c51350;
+  text-decoration: underline;
 }
