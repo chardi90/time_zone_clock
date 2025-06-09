@@ -1,6 +1,6 @@
 body {
   color: #ef5a5a;
-  background-color: #feffdf;
+  background-color: #edf6f9;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  color: #fda403;
+  color: #83c5be;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -33,7 +33,7 @@ input {
 }
 
 select {
-  color: #c51350;
+  color: #006d77;
   border-radius: 8px;
   display: block;
   font-family: "Inter", sans-serif;
@@ -71,7 +71,7 @@ footer {
 }
 
 .city {
-  border-bottom: 1px dashed #e8751a;
+  border-bottom: 1px dashed #ccc;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -88,7 +88,7 @@ footer {
 }
 
 .time {
-  color: #e8751a;
+  color: #006d77;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 600;
