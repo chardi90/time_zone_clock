@@ -97,6 +97,7 @@ footer {
   display: block;
   padding: 30px 50px;
   margin: 60px auto;
+  margin-bottom: 20px;
   max-width: 500px;
 }
 
@@ -130,6 +131,7 @@ footer {
   font-size: 24px;
   font-style: normal;
   line-height: 26px;
+  padding-left: 5px;
 }
 
 .time small {
