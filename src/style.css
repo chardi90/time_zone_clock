@@ -58,8 +58,9 @@ select {
   width: 100%;
 }
 
-.region small {
-  color: grey;
+option.region {
+  color: #2a9d8f;
+  font-size: 14px;
   font-style: italic;
 }
 
