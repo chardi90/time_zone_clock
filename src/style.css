@@ -58,6 +58,11 @@ select {
   width: 100%;
 }
 
+.region small {
+  color: grey;
+  font-style: italic;
+}
+
 button.small-button {
   border: 1px solid #2a9d8f;
   border-radius: 2px;
@@ -70,6 +75,11 @@ button.small-button {
   margin: 0 15px;
   width: auto;
   height: auto;
+}
+
+button.small-button:hover {
+  color: #c51350;
+  font-weight: bold;
 }
 
 a.footer-link {
