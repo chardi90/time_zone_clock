@@ -1,34 +1,6 @@
 const citySelectElement = document.querySelector("#city-dropdown");
 
-function updateCity(event) {
-  let cityTimeZone = event.target.value;
-  if (cityTimeZone === "current") {
-    cityTimeZone = moment.tz.guess();
-  }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  let cityDate = moment().tz(cityTimeZone).format("Do MMMM YYYY");
-  let cityTime = moment()
-    .tz(cityTimeZone)
-    .format("h:mm:ss [<small>]A[</small>]");
-  let citiesElement = document.querySelector("#cities-displayed");
-  let clickId = Math.random();
-  citiesElement.innerHTML += `
-    <div class="city" id="extra-city-${clickId}">
-      <div>
-        <h2>${cityName}</h2>
-        <div class="date">${cityDate}</div>
-      </div>
-      <div class="right-side">
-        <div class="time">${cityTime}</div>
-        <div class="delete">
-          <button class="small-button delete-button">X</button>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-setInterval(function () {
+function updateTime() {
   function displayCityOne() {
     let cityOneElement = document.querySelector("#city-one");
     if (cityOneElement) {
@@ -79,7 +51,38 @@ setInterval(function () {
   displayCityOne();
   displayCityTwo();
   displayCityThree();
-}, 1000);
+}
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityDate = moment().tz(cityTimeZone).format("Do MMMM YYYY");
+  let cityTime = moment()
+    .tz(cityTimeZone)
+    .format("h:mm:ss [<small>]A[</small>]");
+  let citiesElement = document.querySelector("#cities-displayed");
+  let clickId = Math.random();
+  citiesElement.innerHTML += `
+    <div class="city" id="extra-city-${clickId}">
+      <div>
+        <h2>${cityName}</h2>
+        <div class="date">${cityDate}</div>
+      </div>
+      <div class="right-side">
+        <div class="time">${cityTime}</div>
+        <div class="delete">
+          <button class="small-button delete-button">X</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
 
 citySelectElement.addEventListener("change", updateCity);
 
