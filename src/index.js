@@ -116,33 +116,32 @@ function getCityTimeZoneName(cityKey) {
     Palmer: "Antarctica/Palmer",
     Casey: "Antarctica/Casey",
   };
-  const tz = cityTimezones[cityKey];
-  if (!tz) return null;
-  const date = new Date();
-  const full = date.toLocaleDateString("en-US", {
-    timeZone: tz,
-    timeZoneName: "long",
-  });
-  const short = date.toLocaleDateString("en-US", { timeZone: tz });
-  const tzName = full
-    .replace(short, "")
-    .replace(/^[\s,.\-:;]+|[\s,.\-:;]+$/g, "");
-  return tzName;
+
+  return cityTimezones[cityKey] || null;
 }
 
 function updateTime() {
-  let cityElement = document.querySelector("div.city");
-  let cityTimeZoneName = getCityTimeZoneName("cityName");
-  let cityDateElement = cityElement.querySelector("div.date");
-  let cityTimeElement = cityElement.querySelector("div.time");
+  const cityElements = document.querySelectorAll("#cities-displayed .city");
+  cityElements.forEach((cityElement) => {
+    const cityName = cityElement
+      .querySelector("h2")
+      .textContent.trim()
+      .replace(" ", "_");
+    const timeZone = getCityTimeZoneName(cityName);
 
-  let cityDate = moment().tz(`${cityTimeZoneName}`).format("Do MMMM YYYY");
-  let cityTime = moment()
-    .tz(`${cityTimeZoneName}`)
-    .format("h:mm:ss [<small>]A[</small>]");
+    if (!timeZone) return;
 
-  cityDateElement.innerHTML = cityDate;
-  cityTimeElement.innerHTML = cityTime;
+    const cityDateElement = cityElement.querySelector(".date");
+    const cityTimeElement = cityElement.querySelector(".time");
+
+    const cityDate = moment().tz(timeZone).format("Do MMMM YYYY");
+    const cityTime = moment()
+      .tz(timeZone)
+      .format("h:mm:ss [<small>]A[</small>]");
+
+    cityDateElement.innerHTML = cityDate;
+    cityTimeElement.innerHTML = cityTime;
+  });
 }
 
 function updateCity(event) {
