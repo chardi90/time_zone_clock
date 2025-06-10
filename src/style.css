@@ -1,5 +1,5 @@
 body {
-  color: #e04272;
+  color: #264653;
   background-color: #edf6f9;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #c51350;
+  color: #007f5f;
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
   font-style: normal;
@@ -18,13 +18,22 @@ h1 {
   text-align: center;
 }
 
+a.header-link {
+  text-decoration: none;
+}
+
+a.header-link:hover {
+  color: #264653;
+}
+
 h2 {
-  color: #83c5be;
+  color: #2a9d8f;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 20px;
   font-style: normal;
+  line-height: 26px;
   margin: 0 0 5px;
 }
 
@@ -50,10 +59,10 @@ select {
 }
 
 button.small-button {
-  border: 1px solid #83c5be;
+  border: 1px solid #2a9d8f;
   border-radius: 2px;
-  background-color: #fff;
-  color: #c51350;
+  background-color: #e6fffa;
+  color: #007f5f;
   font-size: 5px;
   bottom: -10px;
   padding: 0.5px 1px;
@@ -63,14 +72,20 @@ button.small-button {
   height: auto;
 }
 
-a {
-  color: #e04272;
+a.footer-link {
+  color: #006d77;
+  font-weight: bold;
   text-decoration: none;
 }
 
+a.footer-link:hover {
+  color: #ffb703;
+  text-decoration: underline;
+}
+
 footer {
-  color: #c51350;
-  font-size: smaller;
+  color: #264653;
+  font-size: 10px;
   margin: 0 0 30px;
   text-align: center;
 }
@@ -114,15 +129,11 @@ footer {
   font-weight: 600;
   font-size: 24px;
   font-style: normal;
+  line-height: 26px;
 }
 
 .time small {
   font-size: 18px;
   line-height: 36px;
   vertical-align: middle;
-}
-
-a:hover {
-  color: #c51350;
-  text-decoration: underline;
 }
