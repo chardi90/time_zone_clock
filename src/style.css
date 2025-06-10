@@ -50,9 +50,13 @@ select {
 }
 
 button.small-button {
+  border: 1px solid #83c5be;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #c51350;
   font-size: 5px;
   bottom: -10px;
-  padding: 0.25px 0.5px;
+  padding: 0.5px 1px;
   position: relative;
   margin: 0 15px;
   width: auto;

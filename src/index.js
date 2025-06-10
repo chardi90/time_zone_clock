@@ -21,7 +21,7 @@ function updateCity(event) {
       <div class="right-side">
         <div class="time">${cityTime}</div>
         <div class="delete">
-          <button class="small-button delete-button">❌</button>
+          <button class="small-button delete-button">X</button>
         </div>
       </div>
     </div>
