@@ -9,7 +9,7 @@ function updateCity(event) {
     .format("h:mm:ss [<small>]A[</small>]");
   let citiesElement = document.querySelector("#cities-displayed");
 
-  citiesElement.innerHTML = `
+  citiesElement.innerHTML += `
   <div class="city">
     <div>
       <h2>${cityName}</h2>
