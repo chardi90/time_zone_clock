@@ -11,21 +11,20 @@ function updateCity(event) {
     .tz(cityTimeZone)
     .format("h:mm:ss [<small>]A[</small>]");
   let citiesElement = document.querySelector("#cities-displayed");
-
+  let clickId = Math.random();
   citiesElement.innerHTML += `
-  <div class="city">
-    <div>
-      <h2>${cityName}</h2>
-      <div class="date">${cityDate}</div>
-    </div>
-    <div class="right-side">
-      <div class="time">${cityTime}</div>
-      <div class="delete">
-          <button class="small-button" id="delete">❌</button>
+    <div class="city" id="extra-city-${clickId}">
+      <div>
+        <h2>${cityName}</h2>
+        <div class="date">${cityDate}</div>
+      </div>
+      <div class="right-side">
+        <div class="time">${cityTime}</div>
+        <div class="delete">
+          <button class="small-button delete-button">❌</button>
+        </div>
       </div>
     </div>
-    
-  </div>
   `;
 }
 
@@ -83,3 +82,14 @@ setInterval(function () {
 }, 1000);
 
 citySelectElement.addEventListener("change", updateCity);
+
+document
+  .querySelector("#cities-displayed")
+  .addEventListener("click", function (event) {
+    if (event.target && event.target.matches("button.delete-button")) {
+      const cityDiv = event.target.closest(".city");
+      if (cityDiv) {
+        cityDiv.remove();
+      }
+    }
+  });
