@@ -49,6 +49,16 @@ select {
   width: 100%;
 }
 
+button.small-button {
+  font-size: 5px;
+  bottom: -10px;
+  padding: 0.25px 0.5px;
+  position: relative;
+  margin: 0 15px;
+  width: auto;
+  height: auto;
+}
+
 a {
   color: #e04272;
   text-decoration: none;
@@ -88,6 +98,11 @@ footer {
   border: none;
 }
 
+.right-side {
+  display: flex;
+  justify-content: space-between;
+}
+
 .time {
   color: #006d77;
   font-family: "Roboto Mono", monospace;
@@ -95,8 +110,6 @@ footer {
   font-weight: 600;
   font-size: 24px;
   font-style: normal;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .time small {

@@ -18,7 +18,13 @@ function updateCity(event) {
       <h2>${cityName}</h2>
       <div class="date">${cityDate}</div>
     </div>
-    <div class="time">${cityTime}</div>
+    <div class="right-side">
+      <div class="time">${cityTime}</div>
+      <div class="delete">
+          <button class="small-button" id="delete">❌</button>
+      </div>
+    </div>
+    
   </div>
   `;
 }
